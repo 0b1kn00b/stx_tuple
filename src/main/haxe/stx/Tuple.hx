@@ -7,27 +7,51 @@ enum Tuple2<T1, T2> {
   public function new(l,r){
     this = tuple2(l,r);
   }
+  /**
+    Returns the value on the left hand side.
+  **/
   public function fst() : A {
     return Tuples2.fst(this);
   }
+  /**
+    Returns the value on the right hand side.
+  **/
   public function snd() : B {
     return Tuples2.snd(this);
   }
+  /**
+    Returns the value on the right hand side.
+  **/
   public function swap() : Tup2<B, A> {
     return Tuples2.swap(this);
   }
+  /**
+    Returns a tuple with the left hand side on the right and vice-versa.
+  **/
   public function equals(b : Tup2<A,B>): Bool {
     return Tuples2.equals(this,b);
   }
+  /**
+    Produces an array of untyped values.
+  **/
   public function toArray() : Array<Dynamic> {
     return Tuples2.toArray(this);
   }
+  /**
+    Unpacks the tuple and applies the function with the internal values.
+  **/
   public function into<C>(fn:A->B->C):C {
     return Tuples2.into(this,fn);
   }
+  /**
+    Transforms the function to receive a tuple rather than two arguments.
+  **/
   public inline static function tupled<A,B,C>(f : A -> B -> C){
     return Tuples2.tupled(f);
   }
+  /**
+    Transforms a function taking a tuple to one taking two arguments.
+  **/
   public inline static function untupled<A,B,C>(f:Tup2<A,B>->C):A->B->C{
     return Tuples2.untupled(f);
   }

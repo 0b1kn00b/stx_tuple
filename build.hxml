@@ -1,5 +1,1 @@
-hxml/common.hxml
-hxml/libs.hxml
--main Test
--neko test/test.n
--cmd neko test/test.n
+
