@@ -16,13 +16,13 @@ There are one or two unavoidable gotchas, so off the bat `Tup2` is the abstract 
 
     using stx.Tuple2
 
-So that if you're in a position where you have the underlying `Tuple2` implementaition, you can still use the functions by way of `using`.
+So that if you're in a position where you have the underlying `Tuple2` implementation, you can still use the functions by way of `using`.
 
 ###Instantiation
 
 You can create a tuple by using the enum constructor `tuple2`
 
-    var a = tuple2(1,2);// returns an instance of Tuple2
+    var a = tuple2(1,2);// Returns an instance of Tuple2
 
 If you want to use functions on them the first function will automatically hoist to an instance of `Tup2`.
 
@@ -32,19 +32,19 @@ If you want to use functions on them the first function will automatically hoist
 
     public function fst():A
 
-returns the value in the left side of the tuple
+Returns the value in the left side of the tuple
 
 ####snd
 
     public function snd():B
 
-returns the value in the right hand side of the tuple
+Returns the value in the right hand side of the tuple
 
 ####swap
-  
+
     public function swap():Tuple2<B,A>
 
-returns a tuple with the left hand side on the right and vice-versa.
+Returns a tuple with the left hand side on the right and vice-versa.
 
 ####equals
 
