@@ -1,7 +1,7 @@
 package;
 
 using Lambda;
-import stx.Tuple2;
+using stx.Tuple;
 
 class Test{
   public function new(){

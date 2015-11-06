@@ -1,7 +1,7 @@
 package stx;
 
 import utest.Assert.*;
-using stx.Tuple2;
+using stx.Tuple;
 
 class Tuple2Test{
   public function new(){}
@@ -34,8 +34,9 @@ class Tuple2Test{
     equals(2,o);
   }
 
-  @:note("nope")
+  @:note("Cannot call in through the Abstract to the Enum")
+  /*
   public function testConstructor(){
     //raises(function(){ untyped (Tup2(1,2)); });
-  }
+  }*/
 }
