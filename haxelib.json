@@ -1,13 +1,14 @@
 {
-  "name": "stx_tuple",
-  "url" : "https://github.com/jasononeil/useless/",
-  "license": "MIT",
-  "tags": ["cross", "useless"],
-  "description": "Unnamed, Immutable Tuples for Haxe.",
-  "version": "0.3.0",
-  "releasenote": "Test Release.",
-  "contributors": ["0b1kn00b"],
-  "dependencies": {
+  "name"          : "stx_tuple",
+  "url"           : "https://github.com/0b1kn00b/stx_tuple/",
+  "license"       : "MIT",
+  "tags"          : ["cross", "immutable", "fp", "functional", "tuple"],
+  "description"   : "Unnamed, Immutable Tuples for Haxe.",
+  "version"       : "0.0.2",
+  "dependencies"  : {
     "utest" : ""
   },
+  "releasenote"   : "Dependency pain",
+  "contributors"  : ["0b1kn00b"],
+  "classPath"     : "src/main/haxe"
 }
